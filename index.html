@@ -1,12 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0;url=public/">
-    <title>REFIND – Lost & Found</title>
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>Redirecting to <a href="public/">Lost & Found Portal</a>...</p>
+
+    <div class="container">
+        <h1>Admin Panel</h1>
+
+        <!-- LOST REQUEST -->
+        <div class="request">
+            <h3>Lost Item Request</h3>
+            <p><b>Item:</b> Black Wallet</p>
+            <p><b>Colour:</b> Black</p>
+            <p><b>Details:</b> ID cards inside</p>
+
+            <button class="approve" onclick="approve(this)">
+                Match Found (Proof Verified)
+            </button>
+
+            <button class="reject" onclick="reject(this)">
+                Sorry, Not Here
+            </button>
+        </div>
+
+        <!-- FOUND UPLOAD -->
+        <div class="request">
+            <h3>Found Item Upload</h3>
+            <p><b>Item:</b> Black Wallet</p>
+            <p><b>Location:</b> Library</p>
+
+            <button class="approve" onclick="approve(this)">
+                Accept
+            </button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
